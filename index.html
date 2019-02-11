@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title> Мои таланты </title>
+	<style type="text/css">
+		html,body{
+			font-size: 2.1vh;
+			font-family: Arial;
+		}
+		.wrapper{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(14.3em, 71.42em));
+			grid-template-rows: repeat(10, 100px);
+		}
+		.header{
+			width: 100%;
+			height: 4.86em;
+			padding-top: 5em;
+		}
+		.up{
+			display: flex;
+			align-items: center;
+			width: 89em;
+			margin: 0 10.7em 0;
+			padding: 0 2.1em; 
+			height: 100%;
+		}
+		.phone{
+			display: flex;
+			padding-left: 14.3em;
+			align-items: center;
+			font-size: 1.5em;
+		}
+		button{
+			margin-left: 1.87em;
+			border: none;
+			background-color: #FF5959;
+			color: #fff;
+			height: 2.85em;
+			width: 12em;
+			border-radius: 20px;
+		}
+		.mt_logo{
+			height: 4.85em;
+			width: 4.85em;
+			background-color: #FF5959;
+			color: #fff;
+		}
+		.mt_logo-text{
+			padding-top: 1.4em
+			padding-right: 1.2em;
+			padding-left: 1em;
+			font-size: 1.85em;
+		}
+		.mt_text{
+			margin-top:0.71em;
+		}
+		.mt_text-p{
+			margin-top: 0.3em;
+			padding-left: 2.1em;
+		}
+
+		.blocks{
+			display: flex;
+			grid-column: 1/6;
+			grid-row: 2/3;
+		}
+		.left-block{
+			margin-top: 8.57em;
+			margin-left: 12.8em;
+			margin-right: 1.4em;
+			width: 48%;
+			
+		}
+		.right-block{
+			margin-left: 1.4em;
+			margin-top: 8.57em;
+			margin-right: 10.71em;
+			width: 50%;
+			position: relative;
+		}
+		.color_text{
+			color: #FF5959;
+		}
+		.talants{
+			font-size: 2.7em;
+		}
+		.try{
+			margin-top: 7.14em;
+		}
+		.pics{
+			z-index: 1;
+			width: 35.7em;
+			height: 21.42em;
+		}
+		.enstn{
+			z-index: 2;
+			margin-top: -20.71em;
+			margin-left: 17.85em;
+			margin-right: 4.29em;
+		}
+		.copy{
+			float: right;
+			color: #FF5959;
+			z-index: 2;
+			margin-top: 1.43em;
+			margin-left: 17.85em;
+			margin-right: 4.29em;
+			font-size: 1em;
+		}
+	</style>
 </head>
 <body>
-	<div>
-		<p>Найди себе дело для жизни!</p>
+	<div class="wrapper">
+		<header class = "header">
+		<div class="up">
+				<div class = "mt_logo">
+					<div class = "mt_logo-text">
+						MT
+					</div>
+				</div>
+				<div class = "mt_text">
+					<p class="mt_text-p" style="font-size: 1.42em;"> МоиТаланты </p>
+					<p class="mt_text-p" style="font-size: 1em;"> Определение талантов и сильных сторон </p>
+				</div>
+
+
+			<div class="phone">
+				<div class ="call">
+					+7 495 720-25-17
+				</div>
+				<form class = "call">
+					<button> Заказать звонок </button>
+				</form>
+			</div>
+		</div>
+		</header>
+		<div class = "blocks">
+			<div class="left-block">
+				<p class="talants"> Узнай свои <span class ="color_text"> таланты </span> <br>
+					и найди <span class ="color_text"> дело </span> жизни! </p>
+				<div class="text">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</div>
+				<form class = "try">
+						<button>  Попробовать </button>
+				</form>
+			</div>
+			<div class="right-block">
+				<img class="pics" src="images/tree_lake.png">
+				<div class="enstn"> 
+					Все мы гении. Но если
+					вы будете судить рыбу
+					по её способности взбираться
+					на дерево, она проживёт
+					всю жизнь, считая себя дурой.
+				</div>
+				<div class = "copy">
+					Альберт Энштейн.
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
