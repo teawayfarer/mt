@@ -9,6 +9,27 @@
 			font-family: Arial;
 		}
 		@media(min-width: 1024px){
+				header{
+					width: 40%;
+					height: 4.86em;
+					padding-top: 5em;
+					grid-column: 1/3;
+					grid-row: 1/2;
+				}
+				.up{
+					display: flex;
+					align-items: center;
+					width: 89em;
+					margin: 0 10.7em 0;
+					padding: 0 2.1em; 
+					height: 100%;
+				}
+				.phone{
+					display: flex;
+					padding-left: 14.3em;
+					align-items: center;
+					font-size: 1.5em;
+				}
 				.blocks{
 					display: flex;
 					flex-wrap: wrap;
@@ -33,33 +54,86 @@
 					width: 35%;
 					position: relative;
 				}
-
+				.enstn{
+					z-index: 2;
+					margin-top: -20.71em;
+					margin-left: 17.85em;
+					margin-right: 4.29em;
+				}
+				.copy{
+					float: right;
+					color: #FF5959;
+					z-index: 2;
+					margin-top: 1.43em;
+					margin-left: 17.85em;
+					margin-right: 4.29em;
+					font-size: 1em;
+				}
+				.try{
+					margin-top: 7.14em;
+				}
+				button{
+					margin-left: 1.87em;
+					border: none;
+					background-color: #FF5959;
+					color: #fff;
+					height: 2.85em;
+					width: 12em;
+					border-radius: 20px;
+				}
 		}
 		@media(max-width: 1023px){
 				header{
 					display: flex;
 					justify-content: flex-start;
+					padding-left: 0.8em;
+					grid-column: 1/3;
+					grid-row: 1/2;
+
 				}
-				.call{
-					display: none;
+				.phone{
+					display: flex;
+					align-items: center;
+					font-size: 0.9em;
+					padding: 0.8em 3.8em 0;
+
 				}
 				.up{
-					padding: 0;
+					display: flex;
+					align-items: center;
+					width: 89em;
+					margin: 4em 1em 0;
+					padding: 0 0.1em; 
+					height: 100%;
+				}
+				.call{
+					margin-left: 5em;
+					font-size: 1.7em;
+				}
+				.callorder{
+					margin-left: 0.8em;
+					padding-right: 0.8em;
 				}
 				.blocks{
 					grid-column: 1/5;
 					grid-row: 2/3;
+					padding-left: 0.8em;
+					padding-right: 0.8em;
 				}
 				.left-block{
 					grid-row: 2/3;
 					grid-column: 1/3;
 					margin-top: 8.57em;
 					margin-left: 0.8em;
+					padding-left: 1em;
+					padding-right: 0.8em;
 					margin-right: 0;
 					width: 35%;
 					
 				}
 				.right-block{
+					padding-left: 0.8em;
+					padding-right: 0.8em;
 					grid-row: 2/3;
 					grid-column: 1/3;
 					margin-top: 8.4em;
@@ -69,33 +143,39 @@
 					position: relative;
 				}
 				.enstn{
-					padding-left: 4em;
+					z-index: 3;
+					margin-top: -22em;
+					padding-left: 18em;
+
 					font-size: 0.9em;
 				}
 				.copy{
+					padding-left: 0.8em;
+					padding-right: 0.8em;
 					float: right;
 					color: #FF5959;
 					z-index: 2;
-					margin-top: 1.43em;
-					margin-left: 17.85em;
-					margin-right: 4.29em;
-					font-size: 0.9m;
+					margin-top: 0em;
+					margin-left: 20em;
+					font-size: 0.9em;
 				}
 				.text{
+					padding-left: 4.5em;
+					padding-right: 0.8em;
 					font-size: 0.79em;
 				}
 				button{
-					padding-left: 0.8em;
 					border: none;
 					background-color: #FF5959;
 					color: #fff;
-					height: 3.85em;
-					width: 12em;
+					height: 3em;
+					width: 6em;
 					border-radius: 20px;
+					font-size: 1.5em;
 				}
 				.mt_logo{
-					height: 4.85em;
-					width: 4.85em;
+					height: 5.85em;
+					width: .85em;
 					background-color: #FF5959;
 					color: #fff;
 				
@@ -112,6 +192,19 @@
 				.mt_text-p{
 					margin-top: 0.3em;
 					padding-left: 0.1em;
+					padding-right: 0.8em;
+				}
+				.talants{
+					padding-left: 1em;
+				}
+				.try{
+					margin-left: 30%;
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					height: 3.3em;
+					width: 7.6em;
+					margin-top: 3em;
 				}
 
 
@@ -121,36 +214,6 @@
 		    grid-gap: 2px;
 		    grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
 		    grid-template-rows: repeat(2, 100px);
-		}
-		header{
-			width: 40%;
-			height: 4.86em;
-			padding-top: 5em;
-			grid-column: 1/3;
-			grid-row: 1/2;
-		}
-		.up{
-			display: flex;
-			align-items: center;
-			width: 89em;
-			margin: 0 10.7em 0;
-			padding: 0 2.1em; 
-			height: 100%;
-		}
-		.phone{
-			display: flex;
-			padding-left: 14.3em;
-			align-items: center;
-			font-size: 1.5em;
-		}
-		button{
-			margin-left: 1.87em;
-			border: none;
-			background-color: #FF5959;
-			color: #fff;
-			height: 2.85em;
-			width: 12em;
-			border-radius: 20px;
 		}
 		.mt_logo{
 			height: 4.85em;
@@ -178,29 +241,12 @@
 		.talants{
 			font-size: 2.7em;
 		}
-		.try{
-			margin-top: 7.14em;
-		}
 		.pics{
 			z-index: 1;
 			width: 35.7em;
 			height: 21.42em;
 		}
-		.enstn{
-			z-index: 2;
-			margin-top: -20.71em;
-			margin-left: 17.85em;
-			margin-right: 4.29em;
-		}
-		.copy{
-			float: right;
-			color: #FF5959;
-			z-index: 2;
-			margin-top: 1.43em;
-			margin-left: 17.85em;
-			margin-right: 4.29em;
-			font-size: 1em;
-		}
+	
 	</style>
 </head>
 <body>
@@ -222,7 +268,7 @@
 				<div class ="call">
 					+7 495 720-25-17
 				</div>
-				<form class = "call">
+				<form class = "callorder">
 					<button> Заказать звонок </button>
 				</form>
 			</div>
@@ -235,8 +281,8 @@
 				<div class="text">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 				</div>
-				<form class = "try">
-						<button>  Попробовать </button>
+				<form >
+						<button class = "try" >  Попробовать </button>
 				</form>
 			</div>
 			<div class="right-block">
